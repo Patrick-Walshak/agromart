@@ -40,12 +40,12 @@ export default function RegisterPage() {
   }
 
   return (
-    <main className="grid min-h-screen lg:grid-cols-2">
+    <main className="grid min-h-screen lg:grid-cols-2 font-serif">
       {/* Left panel — image, dimmed */}
       <div className="relative hidden overflow-hidden lg:block">
         {/* REPLACE THIS SRC with your own image link */}
         <img
-          src="https://i.pinimg.com/webp/1200x/e6/cd/60/e6cd60214080c20aa8954bfa79447fc8.webp"
+          src="https://i.pinimg.com/1200x/fd/68/3d/fd683dd7499cac0ab38fa5ba8a69031b.jpg"
           alt="Farm"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -55,7 +55,7 @@ export default function RegisterPage() {
 
         {/* Overlay content */}
         <div className="relative flex h-full flex-col justify-between p-10 text-white">
-          <span className="text-lg font-bold tracking-tight">AgroMart</span>
+          <span className="text-2xl font-bold tracking-tight">AgroMart</span>
           <div>
             <p className="max-w-sm text-2xl font-medium leading-snug">
               Fertilizer, sourced and sold the way farmers actually work —
