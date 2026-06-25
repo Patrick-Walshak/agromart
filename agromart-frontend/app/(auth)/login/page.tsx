@@ -31,7 +31,7 @@ export default function LoginPage() {
   }
 
   return (
-    <main className="grid min-h-screen lg:grid-cols-2">
+    <main className="grid min-h-screen lg:grid-cols-2 font-serif">
       {/* Left panel — image, dimmed */}
       <div className="relative hidden overflow-hidden lg:block">
         {/* REPLACE THIS SRC with your own image link */}
@@ -44,7 +44,7 @@ export default function LoginPage() {
         <div className="absolute inset-0 bg-primary-900/55" />
 
         <div className="relative flex h-full flex-col justify-between p-10 text-white">
-          <span className="text-lg font-bold tracking-tight">AgroMart</span>
+          <span className="text-4xl font-bold tracking-tight">AgroMart</span>
           <div>
             <p className="max-w-sm text-2xl font-medium leading-snug">
               Welcome back. Pick up right where you left off.
@@ -59,7 +59,10 @@ export default function LoginPage() {
       {/* Right panel — form */}
       <div className="flex items-center justify-center bg-white px-6 py-12">
         <div className="w-full max-w-sm">
-          <p className="text-xs font-semibold uppercase tracking-wide text-primary-700">
+          <p className="text-3xl font-semibold uppercase tracking-wide text-primary-700 lg:hidden">
+            AgroMart
+          </p>
+          <p className="text-xs font-semibold uppercase tracking-wide text-primary-700 mt-6">
             Welcome back
           </p>
           <h1 className="mt-1 text-2xl font-bold text-neutral-900">
