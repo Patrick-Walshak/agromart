@@ -55,7 +55,7 @@ export default function RegisterPage() {
 
         {/* Overlay content */}
         <div className="relative flex h-full flex-col justify-between p-10 text-white">
-          <span className="text-2xl font-bold tracking-tight">AgroMart</span>
+          <span className="text-4xl font-bold tracking-tight">AgroMart</span>
           <div>
             <p className="max-w-sm text-2xl font-medium leading-snug">
               Fertilizer, sourced and sold the way farmers actually work —
@@ -71,7 +71,10 @@ export default function RegisterPage() {
       {/* Right panel — form */}
       <div className="flex items-center justify-center bg-primary-400 px-6 py-12">
         <div className="w-full max-w-sm">
-          <p className="text-xs font-semibold uppercase tracking-wide text-primary-700">
+          <p className="text-3xl font-semibold uppercase tracking-wide text-primary-700 lg:hidden">
+            AgroMart
+          </p>
+          <p className="text-xs font-semibold uppercase tracking-wide text-primary-700 mt-6">
             Join AgroMart
           </p>
           <h1 className="mt-1 text-2xl font-bold text-neutral-900">
