@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* Primary — Forest green */
+  /* Primary — Forest green (accent on dark bg) */
   --color-primary-900: #1B4D2E;
   --color-primary-700: #2E7D4F;
   --color-primary-500: #4CAF75;
@@ -30,10 +30,19 @@
   --color-neutral-300: #A8A89E;
   --color-neutral-200: #D6D6CE;
   --color-neutral-50:  #F5F5F0;
+
+  /* Dark theme surfaces */
+  --color-surface: #0D0F0D;
+  --color-surface-raised: #161915;
+  --color-surface-border: #232823;
 }
 
 body {
-  background-color: var(--color-neutral-50);
-  color: var(--color-neutral-900);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-surface);
+  color: var(--color-neutral-50);
+}
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
