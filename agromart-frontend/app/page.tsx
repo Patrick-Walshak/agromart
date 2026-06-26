@@ -5,7 +5,7 @@ export default function HomePage() {
     <main className="min-h-screen bg-surface text-neutral-50 font-serif">
       {/* Nav */}
       <header className="sticky top-0 z-30 border-b border-surface-border bg-surface/95 backdrop-blur">
-        <div className="flex items-center justify-between px-6 py-4 lg:px-12">
+        <div className="flex items-center justify-between px-6 py-4 lg:px-20">
           <span className="text-xl font-bold text-primary-300">AgroMart</span>
           <nav className="hidden items-center gap-8 text-sm text-neutral-300 md:flex">
             <Link href="/products" className="hover:text-primary-300 text-lg">Marketplace</Link>
@@ -13,12 +13,12 @@ export default function HomePage() {
             <Link href="/register" className="hover:text-primary-300 text-lg">Sell on AgroMart</Link>
           </nav>
           <div className="flex items-center gap-3">
-            <Link href="/login" className="hidden text-sm font-medium text-neutral-300 hover:text-primary-300 sm:block">
+            <Link href="/login" className="hidden text-lg font-medium text-neutral-300 hover:text-primary-300 sm:block">
               Log in
             </Link>
             <Link
               href="/register"
-              className="rounded-lg bg-primary-700 px-4 py-2 text-sm font-medium text-white transition hover:bg-primary-500"
+              className="rounded-lg bg-primary-700 px-4 py-2 text-lg font-medium text-white transition hover:bg-primary-500"
             >
               Get started
             </Link>
@@ -29,9 +29,8 @@ export default function HomePage() {
       {/* Hero */}
       {/* Hero */}
       <section className="relative flex min-h-[85vh] items-center justify-center overflow-hidden px-6 text-center">
-        {/* REPLACE THIS SRC with your own image link */}
         <img
-          src="https://i.pinimg.com/1200x/a6/a4/6d/a6a46d0d4843ce8bdf279773c4ac238d.jpg"
+          src="https://images.unsplash.com/photo-1509099342178-e323b1717dba?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Farmers in a field"
           className="absolute inset-0 h-full w-full object-cover"
         />

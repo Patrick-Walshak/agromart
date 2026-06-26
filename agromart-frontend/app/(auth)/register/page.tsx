@@ -77,10 +77,10 @@ export default function RegisterPage() {
           <p className="text-xs font-semibold uppercase tracking-wide text-primary-700 mt-6">
             Join AgroMart
           </p>
-          <h1 className="mt-1 text-2xl font-bold text-neutral-900">
+          <h1 className="mt-1 text-2xl font-bold text-neutral-300">
             Create your account
           </h1>
-          <p className="mt-1 text-sm text-neutral-500">
+          <p className="mt-1 text-lg text-neutral-300">
             Already have an account?{" "}
             <a href="/login" className="font-medium text-primary-700 hover:underline">
               Log in
@@ -90,7 +90,7 @@ export default function RegisterPage() {
           <form onSubmit={handleSubmit} className="mt-6 space-y-4">
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <label className="text-xs font-medium text-neutral-700">First name</label>
+                <label className="text-lg font-medium text-neutral-300">First name</label>
                 <input
                   name="first_name"
                   value={form.first_name}
@@ -100,7 +100,7 @@ export default function RegisterPage() {
                 />
               </div>
               <div>
-                <label className="text-xs font-medium text-neutral-700">Last name</label>
+                <label className="text-lg font-medium text-neutral-300">Last name</label>
                 <input
                   name="last_name"
                   value={form.last_name}
@@ -112,7 +112,7 @@ export default function RegisterPage() {
             </div>
 
             <div>
-              <label className="text-xs font-medium text-neutral-700">Email address</label>
+              <label className="text-lg font-medium text-neutral-300">Email address</label>
               <input
                 name="email"
                 type="email"
@@ -124,7 +124,7 @@ export default function RegisterPage() {
             </div>
 
             <div>
-              <label className="text-xs font-medium text-neutral-700">Phone number</label>
+              <label className="text-lg font-medium text-neutral-300">Phone number</label>
               <input
                 name="phone_number"
                 value={form.phone_number}
@@ -135,7 +135,7 @@ export default function RegisterPage() {
             </div>
 
             <div>
-              <label className="text-xs font-medium text-neutral-700">Password</label>
+              <label className="text-lg font-medium text-neutral-300">Password</label>
               <input
                 name="password"
                 type="password"
@@ -149,7 +149,7 @@ export default function RegisterPage() {
             </div>
 
             <div>
-              <label className="text-xs font-medium text-neutral-700">I am a</label>
+              <label className="text-lg font-medium text-neutral-300">I am a</label>
               <select
                 name="role"
                 value={form.role}
@@ -175,7 +175,7 @@ export default function RegisterPage() {
               {loading ? "Creating account..." : "Create My Account"}
             </button>
 
-            <p className="text-center text-xs text-neutral-400">
+            <p className="text-center text-lg text-neutral-300">
               Your information is kept private and is never sold to third parties.
             </p>
           </form>
