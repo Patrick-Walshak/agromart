@@ -174,37 +174,86 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-surface-border px-6 py-10 lg:px-12">
-        <div className="mx-auto grid max-w-5xl gap-8 sm:grid-cols-3">
+      {/* Footer */}
+      <footer className="border-t border-surface-border px-6 py-12 lg:px-12">
+        <div className="mx-auto grid max-w-6xl gap-10 sm:grid-cols-[1.5fr_1fr_1fr_1fr]">
+          {/* Brand */}
           <div>
-            <span className="text-lg font-bold text-primary-300">AgroMart</span>
-            <p className="mt-2 text-sm text-neutral-500">
-              Nigeria&apos;s marketplace connecting fertilizer sellers with farmers
-              and distributors.
+            <div className="flex items-center gap-2">
+              <span className="flex h-7 w-7 items-center justify-center rounded-md bg-primary-700 text-sm">
+                🌱
+              </span>
+              <span className="text-lg font-bold tracking-wide text-white">
+                AGROMART
+              </span>
+            </div>
+            <p className="mt-3 max-w-xs text-sm text-neutral-500">
+              Nigeria&apos;s marketplace connecting fertilizer sellers with
+              farmers, distributors, and cooperatives.
             </p>
           </div>
+
+          {/* Platform */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wide text-neutral-400">
+            <h4 className="text-xs font-semibold uppercase tracking-wide text-neutral-300">
               Platform
             </h4>
-            <ul className="mt-3 space-y-2 text-sm text-neutral-500">
+            <ul className="mt-4 space-y-2.5 text-sm text-neutral-500">
               <li><Link href="/products" className="hover:text-primary-300">Marketplace</Link></li>
               <li><Link href="/register" className="hover:text-primary-300">Sell on AgroMart</Link></li>
+              <li><Link href="/login" className="hover:text-primary-300">Log in</Link></li>
             </ul>
           </div>
+
+          {/* Company */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wide text-neutral-400">
-              Account
+            <h4 className="text-xs font-semibold uppercase tracking-wide text-neutral-300">
+              Company
             </h4>
-            <ul className="mt-3 space-y-2 text-sm text-neutral-500">
-              <li><Link href="/login" className="hover:text-primary-300">Log in</Link></li>
-              <li><Link href="/register" className="hover:text-primary-300">Create account</Link></li>
+            <ul className="mt-4 space-y-2.5 text-sm text-neutral-500">
+              <li><Link href="#" className="hover:text-primary-300">About</Link></li>
+              <li><Link href="#how-it-works" className="hover:text-primary-300">How It Works</Link></li>
+              <li><Link href="#" className="hover:text-primary-300">Contact</Link></li>
+            </ul>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-wide text-neutral-300">
+              Legal
+            </h4>
+            <ul className="mt-4 space-y-2.5 text-sm text-neutral-500">
+              <li><Link href="#" className="hover:text-primary-300">Privacy Policy</Link></li>
+              <li><Link href="#" className="hover:text-primary-300">Terms of Service</Link></li>
             </ul>
           </div>
         </div>
-        <p className="mt-8 text-center text-xs text-neutral-600">
-          © {new Date().getFullYear()} AgroMart. All rights reserved.
-        </p>
+
+        {/* Divider */}
+        <div className="mx-auto mt-10 max-w-6xl border-t border-surface-border pt-6">
+          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+            <p className="text-xs text-neutral-500">
+              © {new Date().getFullYear()} AgroMart Platform. All rights reserved.
+            </p>
+            <div className="flex items-center gap-4 text-neutral-400">
+              <a href="#" aria-label="LinkedIn" className="hover:text-primary-300">
+                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm13.5 10.27h-3v-4.5c0-1.07-.02-2.45-1.5-2.45-1.5 0-1.73 1.17-1.73 2.37v4.58h-3v-9h2.88v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z" />
+                </svg>
+              </a>
+              <a href="#" aria-label="Facebook" className="hover:text-primary-300">
+                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8v-6.92h-2.4v-2.88H10V9.41c0-2.37 1.41-3.68 3.58-3.68 1.04 0 2.12.18 2.12.18v2.62h-1.32c-1.3 0-1.7.81-1.7 1.64v1.95h2.9l-.46 2.88h-2.44V21.8c4.56-.93 8-4.96 8-9.8z" />
+                </svg>
+              </a>
+              <a href="#" aria-label="X" className="hover:text-primary-300">
+                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18.9 2H22l-7.2 8.23L23 22h-7.1l-5.5-7.1L4 22H1l7.7-8.8L1 2h7.2l5 6.6L18.9 2zm-2.5 18h1.9L8.7 4H6.7l9.7 16z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </footer>
     </main>
   );
