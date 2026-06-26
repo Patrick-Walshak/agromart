@@ -158,24 +158,25 @@ export default function HomePage() {
       </section>
 
       {/* CTA / mailing-list style strip */}
-      <section className="px-6 py-20 text-center lg:px-12">
-        <h2 className="text-3xl font-bold text-white">Ready to get started?</h2>
-        <p className="mx-auto mt-2 max-w-md text-neutral-400">
-          Create your free account and start browsing fertilizer listings today.
-        </p>
-        <div className="mt-6 flex justify-center gap-3">
-          <Link
-            href="/register"
-            className="rounded-lg bg-primary-700 px-6 py-3 text-sm font-medium text-white transition hover:bg-primary-500"
-          >
-            Create your account
-          </Link>
-        </div>
-      </section>
+      <div className=" max-w-5xl max-h-52 bg-green-800 flex justify-center mx-auto rounded-2xl">
+        <section className="px-6 py-20 text-center lg:px-12 mt-[-44px]">
+          <h2 className="text-3xl font-bold text-white">Ready to get started?</h2>
+          <p className="mx-auto mt-2 max-w-md text-neutral-200">
+            Create your free account and start browsing fertilizer listings today.
+          </p>
+          <div className="mt-6 flex justify-center gap-3">
+            <Link
+              href="/register"
+              className="rounded-lg bg-primary-700 px-6 py-3 text-sm font-medium text-white transition hover:bg-primary-500"
+            >
+              Create your account
+            </Link>
+          </div>
+        </section>
+      </div>
 
       {/* Footer */}
-      {/* Footer */}
-      <footer className="border-t border-surface-border px-6 py-12 lg:px-12">
+      <footer className="border-t border-surface-border px-6 py-12 lg:px-12 mt-10">
         <div className="mx-auto grid max-w-6xl gap-10 sm:grid-cols-[1.5fr_1fr_1fr_1fr]">
           {/* Brand */}
           <div>
