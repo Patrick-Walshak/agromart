@@ -6,7 +6,10 @@ export default function HomePage() {
       {/* Nav */}
       <header className="sticky top-0 z-30 border-b border-surface-border bg-surface/95 backdrop-blur">
         <div className="flex items-center justify-between px-6 py-4 lg:px-20">
-          <span className="text-xl font-bold text-primary-300">AgroMart</span>
+          <a href="/homepage"><div className="flex items-center gap-2">
+            <img className="w-14" src="/image/icon.png" alt="" />
+            <span className="text-xl font-bold text-primary-500 mt-5">AgroMart</span>
+          </div></a>
           <nav className="hidden items-center gap-8 text-sm text-neutral-300 md:flex">
             <Link href="/products" className="hover:text-primary-300 text-lg">Marketplace</Link>
             <Link href="/products" className="hover:text-primary-300 text-lg">Categories</Link>

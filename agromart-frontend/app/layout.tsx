@@ -11,10 +11,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 export const metadata: Metadata = {
   title: "AgroMart — Fertilizer Marketplace",
   description:
     "AgroMart connects fertilizer sellers with farmers and distributors across Nigeria.",
+
+    icons: {
+    icon: "/image/icon.png",
+  },
 };
 
 export default function RootLayout({
